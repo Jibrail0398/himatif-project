@@ -36,15 +36,17 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="../../pages/dashboard/dashboard.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
               </p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <li class="nav-item"
+          
+          >
+            <a href="#" class="nav-link" id="Certificate-page" >
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Sertifikat
@@ -52,20 +54,20 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../../index.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+              <li class="nav-item ">
+                <a href="../../pages/certificate/seminar-certificate.php" class="nav-link">
+                  <i class="far fa-circle nav-icon "></i>
                   <p>Sertifikat Seminar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Sertifikat Pelatihan</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../index3.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Sertifikat Lainnya</p>
                 </a>
@@ -78,3 +80,16 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+
+  
+
+  <script>
+    
+    document.addEventListener("DOMContentLoaded",function(){
+      const current_path = window.location.pathname;
+      const certificateLink = document.getElementById("Certificate-page");
+      if(current_path.includes("seminar")){
+        certificateLink.classList.add("active");
+      }
+    });
+  </script>

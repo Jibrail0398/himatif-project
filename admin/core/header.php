@@ -15,4 +15,12 @@
   <link rel="stylesheet" href="../../../assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../../assets/dist/css/adminlte.min.css">
+
+  <?php
+    session_start();
+    if($_SESSION["login"] != "admin"){
+      header('Location: ../../../index.php'); 
+      exit();
+    }
+  ?>
 </head>
