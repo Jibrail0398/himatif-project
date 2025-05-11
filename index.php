@@ -18,7 +18,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href=""><b>Himatif</b>UBP</a>
+    <a href=""><b>e-Certificate</b>UBP</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
